@@ -1,0 +1,8 @@
+#!/bin/bash
+frame=${1:-iphone6}
+color=${2:-silver}
+formatt=${3:-jpeg}
+output=${4:-output}
+
+find input/* -name "*.$formatt" | sed -E "s/input\/(.*)\.$formatt/\1/" | xargs -I{} composite -gravity center -geometry +0+1 input/{}.$formatt frames/$frame-$color.png $output/{}.png
+
