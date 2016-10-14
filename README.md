@@ -1,6 +1,6 @@
 # Auto-framing of mobile screenshots
 
-This script adds device frames around a screenshot. Currently supports iPhone (gold, silver, and space grey)
+This script adds device frames around a screenshot. Currently supports iPhone 6 (gold, silver, and space grey)
 
 ## Requirements
 - ImageMagick (`brew install ImageMagick`)
